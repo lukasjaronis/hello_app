@@ -1,4 +1,3 @@
-
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -26,6 +25,10 @@ group :test do
   gem 'capybara',           '3.32.2'
   gem 'selenium-webdriver', '3.142.7'
   gem 'webdrivers',         '4.3.0'
+end
+
+group :production do
+  gem 'pg', '1.2.3'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
